@@ -1,0 +1,6 @@
+{
+  "query": "enriched_text.keywords:(text:machine learning)",
+  "filter": "enriched_text.docSentiment:(type:positive)",
+  "aggregation": "term(title)",
+  "return": "title,price"
+}

@@ -1,0 +1,6 @@
+{
+  "query":"enriched_text.keywords:(text:machine learning,relevance>.5),(text:statistics,text:algorithms)",
+  "filter":"enriched_text.concepts.text:Machine Learning",
+  "aggregation":"term(title)",
+  "return":"title,price"
+}
